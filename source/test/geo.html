@@ -17,7 +17,12 @@
 			}
 		</style>
 		<title>Test Geolocation -- HTML5</title>
-		<script src="/lib/jquery.min.js"></script>
+		<script src="//apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script>
+			if (!window.jQuery){
+				document.write('<' + 'script src="' + '/lib/jquery.min.js' + '" ><' + '/script' + '>');
+			}
+		</script>
 	</head>
 	<body>
 		<label id="location">Please refresh </label>

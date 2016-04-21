@@ -1,6 +1,5 @@
 title: 关于clarence-pan.gitcafe.io
 date: 2015-11-30 13:09:50
-updated: 
 tags:
   - gitcafe
   - blog
