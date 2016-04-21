@@ -26,6 +26,11 @@ install:
   - npm install hexo-generator-feed --save
   - npm install hexo-generator-sitemap --save
   - npm install hexo-deployer-git --save
+  - npm install hexo-generator-tag --save
+  - npm install hexo-generator-category --save
+  - npm install hexo-generator-less --save
+  - npm install hexo-generator-ejs --save
+  - npm install hexo-generator-index --save
 
 script:
   - hexo clean
