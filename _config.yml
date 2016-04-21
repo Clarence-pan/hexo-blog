@@ -68,6 +68,12 @@ theme: landscape
 # Plugins
 plugins:
  - hexo-generator-feed
+ - hexo-generator-sitemap
+ - hexo-generator-tag
+ - hexo-generator-category
+ - hexo-generator-less
+ - hexo-generator-ejs
+ - hexo-generator-index
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
