@@ -1,0 +1,65 @@
+<script src="/lib/jquery.min.js"></script>
+
+<% if (theme.fancybox){ %>
+<%- css('fancybox/jquery.fancybox') %>
+<%- js('fancybox/jquery.fancybox.pack') %>
+<% } %>
+
+<%- js('js/script') %>
+
+
+<% if (config.disqus_shortname){ %>
+    <script>
+      var disqus_shortname = '<%= config.disqus_shortname %>';
+      <% if (page.permalink){ %>
+      var disqus_url = '<%= page.permalink %>';
+      <% } %>
+      (function(){
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/<% if (page.comments) { %>embed.js<% } else { %>count.js<% } %>';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+<% } %>
+
+<% if (config.duoshuo_shortname){ %>
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    var duoshuoQuery = {short_name:"<%= config.duoshuo_shortname %>"};
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0]
+                || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+</script>
+<!-- 多说公共JS代码 end -->
+<% } %>
+
+
+
+<script type="text/javascript">
+    $(function(){
+        if ($('#comments .thread-kinda').size() <= 1){
+            return;
+        }
+
+        // show only the first one!
+        activate($('#comments .thread-kinda:first'));
+        activate($('#comments-tabs').show().find('li:first'));
+
+        $('#comments-tabs').on('click', 'a', function(){
+            activate($(this).closest('li'));
+            activate($($(this).attr('href')));
+        });
+
+        function activate($el){
+            $el.siblings().removeClass('active');
+            $el.addClass('active');
+        }
+    })
+</script>

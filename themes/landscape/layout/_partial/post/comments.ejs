@@ -1,0 +1,22 @@
+<% if (post.path && post.title){ %>
+	<ul id="comments-tabs" style="display:none">
+		<% if (config.disqus_shortname){ %>
+			<li><a href="#disqus_thread">Disqus上的评论</a></li>
+		<% } %>
+		<% if (config.duoshuo_shortname){ %>
+			<li><a href="#duoshuo_thread">多说上的评论</a></li>
+		<% } %>
+	</ul>
+	<section id="comments">
+		<% if (config.disqus_shortname){ %>
+			<div id="disqus_thread" class="thread-kinda">
+				<noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+			</div>
+		<% } %>
+		<% if (config.duoshuo_shortname){ %>
+			<div id="duoshuo_thread" class="thread-kinda">
+				<div class="ds-thread" data-thread-key="<%= post.path %>" data-title="<%= post.title %>" data-url="http://clarence-pan.github.io<%- url_for(post.path) %>"></div>
+			</div>
+		<% } %>
+	</section>
+<% } %>

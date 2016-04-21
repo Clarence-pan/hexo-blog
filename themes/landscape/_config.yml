@@ -1,0 +1,28 @@
+# Header
+menu:
+  Home: /
+  Archives: /archives
+  About Me: /about-me
+rss: /atom.xml
+
+# Content
+excerpt_link: Read More
+fancybox: true
+
+# Sidebar
+sidebar: right
+widgets:
+- category
+- tagcloud
+- archive
+- recent_posts
+- recent_comments
+- hot_posts
+
+# Miscellaneous
+google_analytics: UA-67440907-1
+favicon: /favicon.png
+twitter:
+google_plus:
+fb_admins:
+fb_app_id:
