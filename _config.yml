@@ -71,9 +71,9 @@ plugins:
  - hexo-generator-sitemap
  - hexo-generator-tag
  - hexo-generator-category
- - hexo-generator-less
- - hexo-generator-ejs
  - hexo-generator-index
+ - hexo-renderer-less
+ - hexo-renderer-ejs
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
