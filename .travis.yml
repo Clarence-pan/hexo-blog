@@ -28,8 +28,8 @@ install:
   - npm install hexo-deployer-git --save
   - npm install hexo-generator-tag --save
   - npm install hexo-generator-category --save
-  - npm install hexo-generator-less --save
-  - npm install hexo-generator-ejs --save
+  - npm install hexo-render-less --save
+  - npm install hexo-render-ejs --save
   - npm install hexo-generator-index --save
 
 script:
