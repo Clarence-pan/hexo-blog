@@ -31,6 +31,7 @@ install:
   - npm install hexo-render-less --save
   - npm install hexo-render-ejs --save
   - npm install hexo-generator-index --save
+  - cat packages.json
 
 script:
   - hexo clean
