@@ -1,6 +1,6 @@
 title: 如何解决Selenium中"Cannot find function addEventListener in object [object HTMLDocument]"的错误
-date: 2015-12-30
-update: 
+date: 2016-04-28
+update: 2016-04-28
 tags: 
   - Selenium
   - Java
