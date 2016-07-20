@@ -13,6 +13,8 @@ categories:
 
 最简单的方式莫过于到[PHPUnit的官网](https://phpunit.de/)下载PHPUnit，然后把那个下载了的`phpunit.phar`加到`PATH`中。
 
+<!-- more -->
+
 此外，还可以通过 `pear` 来安装phpunit:
 
 ```sh

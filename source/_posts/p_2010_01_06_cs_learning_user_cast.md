@@ -12,6 +12,7 @@ categories:
 C#中一个继承自C++的优良特性是可以自定义类型转换。
 
 以前在C++中这样写：
+<!-- more -->
 
 ```
 class CBrush{ //摘自MFC中CBrush类的部分代码。

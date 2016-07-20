@@ -10,6 +10,9 @@ categories:
 [cnblogs](http://www.cnblogs.com/pcy0/archive/2012/11/01/proc_has_what.html) Post date: 2012-11-01 23:46
 
 **/proc目录中的重要信息**
+
+<!-- more -->
+
 原文链接： [http://blog.chinaunix.net/space.php?uid=12290680&do=blog&id=26894](http://blog.chinaunix.net/space.php?uid=12290680&do=blog&id=26894)
 /proc/cpuinfo - CPU信息 (i.e. vendor, Mhz, flags like mmx) 
 /proc/interrupts - 中断 

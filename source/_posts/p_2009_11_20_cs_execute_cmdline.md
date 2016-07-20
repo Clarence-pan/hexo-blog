@@ -7,7 +7,11 @@ categories:
   - C#
 ---
 [cnblogs](http://www.cnblogs.com/pcy0/archive/2009/11/20/cs_execute_cmdline.html) Post date: 2009-11-20 17:28
-前几天我想在一个程序中运行类似这样一个命令行“javac test.java”，环境变量我都设定得好好的，但使用Process.Start时依旧会有找不到文件的异常。后来发现Process.Start函数不支持自动搜索PATH环境变量。很是郁闷。闲着没事，写了个能搜索PATH的运行命令行函数Execute()，详见下面代码。
+前几天我想在一个程序中运行类似这样一个命令行“javac test.java”，环境变量我都设定得好好的，但使用Process.Start时依旧会有找不到文件的异常。后来发现Process.Start函数不支持自动搜索PATH环境变量。
+
+<!-- more -->
+
+很是郁闷。闲着没事，写了个能搜索PATH的运行命令行函数Execute()，详见下面代码。
 ```
         /// <summary>
         /// 运行一个命令
