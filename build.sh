@@ -5,8 +5,8 @@ cd `dirname $0`
 git add -A .
 git commit -m "auto commit"
 
-git pull origin master --no-edit
-
+git fetch origin master
+git merge origin/master --no-edit
 if [ "$?" != "0" ]; then 
 	echo "Pull from origin failed!"
 	exit 1;
