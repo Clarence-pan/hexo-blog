@@ -9,12 +9,12 @@ categories:
 
 [cnblogs](http://www.cnblogs.com/pcy0/archive/2010/05/03/Cpp_type_cast_note1.html) Post date: 2010-05-03 14:31
 
-C++类型转换小记（一）
-=====================
 
 ### C++转换操作符
 
 #### ISO-C++中有四种转换操作符
+
+<!-- more -->
 
 dynamic\_cast: 在多态类型转换时使用，实现在运行时，并进行运行时检测，如果转换失败，返回值是NULL
 static\_cast：与dynamic\_cast相反，static\_cast是在编译时转换类型的，故称为static\_cast，它可以用在值类型转换中

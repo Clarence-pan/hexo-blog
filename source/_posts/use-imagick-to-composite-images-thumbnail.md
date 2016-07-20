@@ -9,6 +9,10 @@ categories:
   - php
 ----
 
+最近有个需求是要把多张图片组合起来生成缩略图，刚好可以用强大的`imagick`扩展。
+
+<!-- more -->
+
 这里说的`imagick` 是 `ImageMagick` 在PHP下的扩展。使用`pecl`安装起来那叫一个轻松简单 —— 一条命令就搞定：
 
 ```sh
@@ -17,7 +21,6 @@ sudo pecl install imagick
 
 （扩展装好后还是要在php.ini中加上`extension=imagick.so`，然后记得重启`apache`或`php-fpm`服务。）
 
-最近有个需求是要把多张图片组合起来生成缩略图，刚好用用这个强大的`imagick`扩展。
 这个需求是要这样生成缩略图：
 
 1. 如果有1张图片，就直接生成这张图片的缩略图；

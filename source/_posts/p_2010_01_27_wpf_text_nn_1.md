@@ -9,9 +9,11 @@ categories:
 
 [cnblogs](http://www.cnblogs.com/pcy0/archive/2010/01/27/wpf_text_nn_1.html) Post date: 2010-01-27 17:28
 
-　　WPF是一个好东东
+WPF是一个好东东
 
 用它来设计界面很方便，只要是能想得到的界面，都能很轻松使用WPF设计出来（相比WIN FORM和MFC）
+
+<!-- more -->
 
 但是WPF缺点也很多，首先是运行库太大来，一个WPF程序没有个几十兆的内存是运行不起来的
 

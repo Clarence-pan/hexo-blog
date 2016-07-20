@@ -14,6 +14,8 @@ categories:
 
 这个BUG是关于\<!DOCTYPE\>标签的。
 
+<!-- more -->
+
 这个标签一般可以简单的写作：
 
 ~~~~ {.brush:csharp}

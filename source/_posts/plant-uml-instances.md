@@ -20,6 +20,8 @@ Alice <-- Bob: another authentication Response
 
 ```
 
+<!-- more -->
+
 ---
 
 ![](/media/14508871765386/14508873876653.jpg)
