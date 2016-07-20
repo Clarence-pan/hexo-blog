@@ -1,13 +1,10 @@
 title: 如何在静态博客中嵌入评论
-date: 2015-09-10
+date: 2016-07-20
 tags:
     - hexo
-    - 多说
-    - comments
     - blog
 categories:
     - blog
-    - comments
 ---
 
 默认情况下`hexo`博客(如本站)的首页显示的是完整的文章 -- 而文章比较长的时候这无疑会带来诸多不遍。 那怎么样才能只显示个摘要呢？
