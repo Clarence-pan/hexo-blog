@@ -13,6 +13,7 @@ categories:
 ## 第一步，安装emacs-mac
 emacs-mac是对GNU的emacs为mac环境进行了一定的定制，可能体验会更好一点。
 那就卸载掉以前的emacs，装下吧：
+<!-- more -->
 
 ```sh
 $ brew remove emacs

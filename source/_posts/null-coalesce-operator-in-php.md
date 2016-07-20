@@ -9,6 +9,7 @@ categories:
 ----
 
 null合并运算符是一个好东西，有了它我们就能很方便的获取一个参数，并能在其为空的情况下提供一个默认值。比如在js中可以用`||`来搞：
+<!-- more -->
 
 ```js
 function setSomething(a){

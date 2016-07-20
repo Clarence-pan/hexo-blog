@@ -15,6 +15,8 @@ categories:
 
 Debug和Trace这里指.Net中System.Diagnostics（System程序集）中的Debug和Trace工具类。
 
+<!-- more -->
+
 ### 如何使用？
 
 Debug和Trace两个类都有很多静态方法和属性可以使用，并且Debug和Trace大部分方法都不仅名称一样，用法也很相似。
