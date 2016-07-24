@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/sh -e
 
 sh ./build.sh
 if [ "$?" != '0' ]; then
