@@ -1,4 +1,4 @@
-title: 如何在静态博客hexo中只显示摘要信息
+title: 如何在静态博客HEXO中只显示摘要信息
 date: 2016-07-20
 tags:
     - hexo
