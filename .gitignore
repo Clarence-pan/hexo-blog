@@ -6,5 +6,5 @@ node_modules/
 public/
 .deploy*/
 .idea/
-.deploy-task.d/*
+deploy-task.d/*
 
