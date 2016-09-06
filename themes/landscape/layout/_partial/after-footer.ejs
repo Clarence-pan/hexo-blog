@@ -12,6 +12,8 @@ if (!window.jQuery){
 
 <%- js('js/script') %>
 
+<!-- index: type=<%= typeof(index) %> value=<%= typeof(index) !== 'undefined' && index %> -->
+
 <% if (typeof(index) === 'undefined' || !index){ %>
     <% if (config.disqus_shortname){ %>
         <script>
