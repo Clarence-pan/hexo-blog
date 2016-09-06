@@ -12,7 +12,7 @@ if (!window.jQuery){
 
 <%- js('js/script') %>
 
-<% if (!index){ %>
+<% if (typeof(index) === 'undefined' || !index){ %>
     <% if (config.disqus_shortname){ %>
         <script>
           var disqus_shortname = '<%= config.disqus_shortname %>';
