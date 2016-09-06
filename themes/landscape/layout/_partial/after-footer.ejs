@@ -62,6 +62,10 @@ if (!window.jQuery){
         function activate($el){
             $el.siblings().removeClass('active');
             $el.addClass('active');
+            if ($el.attr('id') === 'disqus_thread' && !$el.data('loaded')){
+                $el.data('loaded', 'YES');
+                eval($('#disqus_script').html() + '');
+            }
         }
     })
 </script>
