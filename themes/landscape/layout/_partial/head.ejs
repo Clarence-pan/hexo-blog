@@ -22,6 +22,8 @@
   }
   %>
   <title><% if (title){ %><%= title %> | <% } %><%= config.title %></title>
+  <meta name="keywords" content="<%= (typeof keywords != 'undefined' && keywords) ? keywords : config.keywords || '' %>" >
+  <meta name="description" content="<%= (typeof description != 'undefined' && description) ? description : config.description || '' %>" >
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <%- open_graph({twitter_id: theme.twitter, google_plus: theme.google_plus, fb_admins: theme.fb_admins, fb_app_id: theme.fb_app_id}) %>
   <% if (theme.rss){ %>
