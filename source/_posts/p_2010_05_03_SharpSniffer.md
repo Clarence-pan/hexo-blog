@@ -12,6 +12,9 @@ categories:
 虽然网上已经有了SharpSniffer
 这一个SharpSniffer还是原创的
 无他，唯为学习
+
+<!-- more -->
+
 工程文件下载：[SharpSniffer.rar](http://files.cnblogs.com/pcy0/SharpSniffer.rar)
 
 ### 主要过程

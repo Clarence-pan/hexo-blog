@@ -13,6 +13,8 @@ categories:
 
 前天看到有人说QQ Mail未使用HTTPS，然后我就到mail.qq.com上看一下，结果发现QQ Mail登录是必须使用HTTPS的，还可以全程使用HTTPS……
 
+<!-- more -->
+
 再然后想到博客园登录是否是使用HTTPS呢？
 
  到博客园登录界面一看，没有HTTPS的标志。

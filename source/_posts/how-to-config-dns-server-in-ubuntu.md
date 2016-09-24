@@ -15,6 +15,8 @@ bind9可以直接用apt-get安装：
 sudo apt-get install bind9
 ```
 
+<!-- more -->
+
 #二、配置服务器
 bind9的配置文件在`/etc/bind/`目录下，入口文件是`named.conf`，这个文件包含了`named.conf.options`, `named.conf.local`和`named.conf.default-zones`。
 其中`named.conf.options`中包含了以下内容：

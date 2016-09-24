@@ -12,6 +12,8 @@ categories:
 
 今天遇到一个很坑爹的问题，某Selenium自动化用例老是失败，报错如下：
 
+<!-- more -->
+
 ```
 1) App\Tests\***********
 Facebook\WebDriver\Exception\UnknownServerException: TypeError: Cannot find function addEventListener in object [object HTMLDocument]. (http://**********/*)
