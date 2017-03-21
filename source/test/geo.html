@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="HandheldFriendly" content="true">
+		<meta name="MobileOptimized" content="width">
+		<meta name="viewport" id="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="applicable-device"content="mobile">
+		<style>
+			html{
+			/*	font-size: large; */
+			}
+			#location{
+				white-space: pre;
+			}
+		</style>
+		<title>Test Geolocation -- HTML5</title>
+		<script src="//apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script>
+			if (!window.jQuery){
+				document.write('<' + 'script src="' + '/lib/jquery.min.js' + '" ><' + '/script' + '>');
+			}
+		</script>
+	</head>
+	<body>
+		<label id="location">Please refresh </label>
+		<br/>
+	    <button id="refresh">Refresh</button>
+		<label><input type="checkbox" id="highAccuracy" />High Accuracy</label><br/>
+		<label>
+			Timeout(ms):
+			<input type="text" id="timeout" placeholder="timeout" value="30000" /><br/>
+		</label>
+		<label>
+			Age(ms):
+			<input type="text" id="age" placeholder="age" value="1000"/><br/>
+		</label>
+<script>
+	var $location = $('#location');
+	var $refresh = $('#refresh');
+
+	$refresh.on('click', function(){
+		updateLocation("updating...");
+		navigator.geolocation.getCurrentPosition(function(loc){
+				loc = loc || {};
+				loc.coords = loc.coords || {};
+				var pos = { 
+					latitude: loc.coords.latitude, 
+					longitude: loc.coords.longitude, 
+					accuracy: loc.coords.accuracy
+				};
+				updateLocation("Success: \n" + JSON.stringify(pos, '', ' '));
+			}, function(error){
+				updateLocation("Failed: \n" + JSON.stringify(error, '', ' '));
+			},
+    		 {
+				enableHighAccuracy: $('#highAccuracy').is(':checked'),
+				timeout: Number($("#timeout").val()),
+				maximumAge: Number($('#age').val())
+			});
+	});
+
+	function updateLocation(text){
+		$location.text(text);
+	}
+</script>
+	</body>
+</html>

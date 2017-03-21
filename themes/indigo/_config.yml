@@ -12,21 +12,21 @@ menu:
     text: 主页
     url: /
   archives:
+    text: 归档
     url: /archives
   tags:
+    text: Tags
     url: /tags
   th-list:
     text: Categories
     url: /categories
   github:
-    url: https://github.com/yscoder
-    target: _blank
-  weibo:
-    url: http://www.weibo.com/ysweb
+    url: https://github.com/Clarence-pan
     target: _blank
   link:
-    text: 测试
-    url: /custom
+    text: SegmentFault
+    url: https://segmentfault.com/u/northernfighter
+    target: _blank
 
 rss: /atom.xml
 
@@ -36,7 +36,7 @@ avatar: /img/avatar.jpg
 favicon: /favicon.ico
 
 # email
-email: 634206017@qq.com
+email: ""
 
 # 设置 Android L Chrome 浏览器状态栏颜色
 color: '#3F51B5'
@@ -77,10 +77,10 @@ toc:
   list_number: true  # 是否显示数字排序
 
 # 文章页版权声明内容，hexo中所有变量及辅助函数等均可调用，具体请查阅 hexo.io
-copyright: 这里写留言或版权声明：<a href="<%- url_for(page.path).replace(/index\.html$/, '') %>" target="_blank" rel="external"><%- url.replace(/index\.html$/, '') %></a>
+copyright: <a href="<%- url_for(page.path).replace(/index\.html$/, '') %>" target="_blank" rel="external"><%- url.replace(/index\.html$/, '') %></a><a rel="nofollow" href="http://www.miitbeian.gov.cn/">苏ICP备16036486号</a>
 
 # 站长统计，如要开启，输入CNZZ站点id，如 cnzz: 1255152447
-cnzz: false
+cnzz: 1256463440
 
 # 百度统计，如要开启，改为你的 key
 baidu_tongji: false
@@ -99,9 +99,9 @@ less:
     - source/css/style.less
 
 # 是否开启多说评论，填写你在多说创建的站点二级域名
-duoshuo: ysblog
+duoshuo: clarence-pan
 # 是否开启多说评论计数（该服务不稳定）
-duoshuo_count: false
+duoshuo_count: true
 # 使用 disqus 时关闭多说评论
 disqus_shortname: false
 
@@ -112,10 +112,10 @@ disqus_shortname: false
 canonical: false
 
 # 版权起始年份
-since_year: 2015
+since_year: 2011
 
 # 用户页面中作者相关的描述性文字，如不需要设为 false
-about: 用户页面中作者相关的描述性文字，如不需要设为 false
+about: false
 
 # “不蒜子”访问量统计，详见 http://ibruce.info/2015/04/04/busuanzi/
 visit_counter:
@@ -124,6 +124,6 @@ visit_counter:
 
 
 #动态定义title
-title_change:
-  normal: (つェ⊂)咦!又好了!  
-  leave: 死鬼去哪里了！
+title_change: false
+  # normal: (つェ⊂)咦!又好了!  
+  # leave: 死鬼去哪里了！

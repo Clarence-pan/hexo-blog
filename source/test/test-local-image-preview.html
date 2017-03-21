@@ -1,0 +1,34 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="HandheldFriendly" content="true">
+<meta name="MobileOptimized" content="width">
+<meta name="viewport" id="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="applicable-device"content="mobile">
+<script type="text/javascript">
+	function preImg(sourceId, targetId) {
+		if (typeof FileReader === 'undefined') {
+			alert('Your browser does not support FileReader...');
+			return;
+		}
+		var reader = new FileReader();
+
+		reader.onload = function(e) {
+			var img = document.getElementById(targetId);
+			img.src = this.result;
+		}
+		reader.readAsDataURL(document.getElementById(sourceId).files[0]);
+	}
+</script>
+</head>
+<body>
+<form action="">
+	<input type="file" name="imgOne" id="imgOne" accept="image/*" multiple="multiple" onchange="preImg(this.id,'imgPre');" />
+	<img id="imgPre" src="" style="display: block;width: 320px;" />  
+</form>
+</body>
+</html>
+

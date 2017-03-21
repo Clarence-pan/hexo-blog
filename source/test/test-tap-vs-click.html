@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="HandheldFriendly" content="true">
+		<meta name="MobileOptimized" content="width">
+		<meta name="viewport" id="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="applicable-device"content="mobile">
+		<style>
+			html{
+			/*	font-size: large; */
+			}
+		</style>
+		<script>
+			define = window.define || function(initialize){
+				var require = function(){};
+				var exports = {};
+				var module = {};
+				initialize(require, exports, module);
+				return exports;
+			};
+		</script>
+		<script src="/lib/zepto.js"></script>
+		<title>Test</title>
+
+	</head>
+	<body>
+		<button >test</button>
+		<div id="result"></div>
+		<script>
+			function log(s){
+				$("#result").append($("<p></p>").text(s));
+			}
+			$(function(){
+				var tapTime;
+				var clickTime;
+				$("button").on('click',function(){
+					clickTime = new Date();
+					log("click: " + (+clickTime));
+					log("delta: " + (clickTime - tapTime) + " ms");
+				}).on('tap', function(){
+					tapTime = new Date();
+					log("--tap: " + (+tapTime));
+				});
+			});
+		</script>
+	</body>
+</html>
