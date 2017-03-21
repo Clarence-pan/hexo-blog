@@ -77,7 +77,7 @@ toc:
   list_number: true  # 是否显示数字排序
 
 # 文章页版权声明内容，hexo中所有变量及辅助函数等均可调用，具体请查阅 hexo.io
-copyright: <a href="<%- url_for(page.path).replace(/index\.html$/, '') %>" target="_blank" rel="external"><%- url.replace(/index\.html$/, '') %></a><a rel="nofollow" href="http://www.miitbeian.gov.cn/">苏ICP备16036486号</a>
+copyright: <a href="<%- url_for(page.path).replace(/index\.html$/, '') %>" target="_blank" rel="external"><%- url.replace(/index\.html$/, '') %></a>
 
 # 站长统计，如要开启，输入CNZZ站点id，如 cnzz: 1255152447
 cnzz: 1256463440
@@ -89,7 +89,7 @@ baidu_tongji: false
 tajs: false
 
 # google
-google_analytics: false
+google_analytics: UA-67440907-3
 google_site_verification: false
 
 # less
