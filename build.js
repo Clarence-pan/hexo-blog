@@ -6,7 +6,7 @@ var exec = function(cmd){
 
 console.log("Generate files by hexo...")
 
-exec('hexo generate')
+exec('./node_modules/.bin/hexo generate'.replace(/[\/]/g, require('path').sep))
 
 console.log("Copying files...")
 

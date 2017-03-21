@@ -5,7 +5,7 @@ if [ "$?" != '0' ]; then
 	exit "$?";
 fi;
 
-hexo deploy
+./node_modules/.bin/hexo deploy
 
 
 ## deploy to http://clarence-pan.gitcafe.io/

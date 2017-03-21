@@ -21,14 +21,13 @@ before_install:
   - git clone -b master git@github.com:Clarence-pan/clarence-pan.github.io.git .deploy_git
 
 install:
-  - npm install hexo-cli@1.0.2 -g
   - npm install
 
 script:
   - sed -i 'y/UA-67440907-3/UA-67440907-1/' themes/indigo/_config.yml
-  - hexo clean
-  - hexo generate
+  - ./node_modules/.bin/hexo clean
+  - ./node_modules/.bin/hexo generate
   - cp -f source/test/* public/test/
   - cp -f source/lib/* public/lib/
-  - hexo deploy
+  - ./node_modules/.bin/hexo deploy
 
