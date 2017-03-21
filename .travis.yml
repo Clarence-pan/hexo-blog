@@ -25,7 +25,7 @@ install:
   - npm install
 
 script:
-  - sed -i 'y/UA-67440907-3/UA-67440907-1/' themes/landscape/_config.yml
+  - sed -i 'y/UA-67440907-3/UA-67440907-1/' themes/indigo/_config.yml
   - hexo clean
   - hexo generate
   - cp -f source/test/* public/test/
