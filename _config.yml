@@ -66,17 +66,6 @@ pagination_dir: page
 ## Themes: https://hexo.io/themes/
 theme: indigo
 
-# Plugins
-plugins:
- - hexo-generator-sitemap
- - hexo-generator-tag
- - hexo-generator-category
- - hexo-generator-index
- - hexo-generator-archive
- - hexo-renderer-less
- - hexo-renderer-ejs
-
-
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
@@ -98,5 +87,4 @@ marked:
     breaks: true
     smartLists: true
     smartypants: false
-
 
