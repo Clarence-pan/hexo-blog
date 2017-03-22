@@ -99,9 +99,15 @@ less:
     - source/css/style.less
 
 # 是否开启多说评论，填写你在多说创建的站点二级域名
-duoshuo: clarence-pan
+duoshuo: false
 # 是否开启多说评论计数（该服务不稳定）
-duoshuo_count: true
+duoshuo_count: false
+
+# 搜狐畅言的appid配置: (如果为false，则不显示搜狐畅言)
+changyan: cysUkeX5G
+# 搜狐畅言的conf配置：
+changyan_conf: prod_60afcdd5c73414aea0e0dce2601a3563
+
 # 使用 disqus 时关闭多说评论
 disqus_shortname: false
 

@@ -4,6 +4,8 @@
     title: post.title,
     url: url
   }) %>
+  
+<%- partial('../plugins/changyan', {sid: post.slug}) %>
 
 <%- partial('../plugins/disqus') %>
 <%} %>
