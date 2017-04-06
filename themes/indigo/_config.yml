@@ -18,12 +18,16 @@ menu:
     text: Tags
     url: /tags
   th-list:
-    text: Categories
+    text: 分类
     url: /categories
   github:
     url: https://github.com/Clarence-pan
     target: _blank
   link:
+    text: 前端实验室
+    url: https://clarencep.github.io/fe-lab/
+    target: _blank
+  sf:
     text: SegmentFault
     url: https://segmentfault.com/u/northernfighter
     target: _blank
