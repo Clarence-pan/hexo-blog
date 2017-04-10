@@ -14,3 +14,5 @@ exec('cp -rf source/test/* public/test/')
 exec('cp -rf source/lib/* public/lib/')
 
 console.log("Done.")
+
+

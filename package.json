@@ -9,6 +9,8 @@
     "version": "3.2.2"
   },
   "dependencies": {
+    "cb2p": "^1.1.0",
+    "co": "^4.6.0",
     "hexo": "^3.2.2",
     "hexo-cli": "^1.0.2",
     "hexo-deployer-git": "^0.2.0",
@@ -24,6 +26,7 @@
     "hexo-renderer-less": "^0.2.0",
     "hexo-renderer-marked": "^0.2.10",
     "hexo-renderer-stylus": "^0.3.1",
-    "hexo-server": "^0.2.0"
+    "hexo-server": "^0.2.0",
+    "htmlparser": "^1.7.7"
   }
 }
