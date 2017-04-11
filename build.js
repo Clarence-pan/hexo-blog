@@ -17,5 +17,6 @@ exec('cp -rf source/fe-lab/* public/fe-lab/')
 console.log("Done.")
 
 // cdnify
-require('./cdnify')
+// just tried it -- but I'm not able to afford the HTTPS CDN...
+//require('./cdnify')
 
