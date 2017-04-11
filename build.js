@@ -15,3 +15,7 @@ exec('cp -rf source/lib/* public/lib/')
 exec('cp -rf source/fe-lab/* public/fe-lab/')
 
 console.log("Done.")
+
+// cdnify
+require('./cdnify')
+

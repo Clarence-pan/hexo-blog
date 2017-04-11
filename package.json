@@ -9,6 +9,11 @@
     "version": "3.2.2"
   },
   "dependencies": {
+    "async": "^2.3.0",
+    "cb2p": "^1.1.0",
+    "cheerio": "^0.22.0",
+    "co": "^4.6.0",
+    "glob": "^7.1.1",
     "hexo": "^3.2.2",
     "hexo-cli": "^1.0.2",
     "hexo-deployer-git": "^0.2.0",
