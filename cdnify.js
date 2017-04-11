@@ -57,7 +57,7 @@ function cdnifyUrl(url){
     return url
 }
 
-glob('public/**/*.html', function(err, files){
+glob('public-cdn/**/*.html', function(err, files){
     if (err){
         console.error(err)
         process.exit(1)

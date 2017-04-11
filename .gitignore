@@ -4,6 +4,7 @@ db.json
 *.log
 node_modules/
 public/
+public-cdn/
 .deploy*/
 .idea/
 /deploy-task.d/*

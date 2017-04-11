@@ -18,5 +18,6 @@ console.log("Done.")
 
 // cdnify
 // just tried it -- but I'm not able to afford the HTTPS CDN...
-//require('./cdnify')
+exec('cp -rf public/* public-cdn/')
+require('./cdnify')
 
