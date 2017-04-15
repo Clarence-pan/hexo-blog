@@ -12,9 +12,12 @@ console.log("Copying files...")
 
 exec('cp -rf source/test/* public/test/')
 exec('cp -rf source/lib/* public/lib/')
+exec('cp -rf source/fe-lab/* public/fe-lab/')
 
 console.log("Done.")
 
 // cdnify
+// just tried it -- but I'm not able to afford the HTTPS CDN...
+exec('cp -rf public/* public-cdn/')
 require('./cdnify')
 
