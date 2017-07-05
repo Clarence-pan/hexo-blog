@@ -14,6 +14,7 @@ categories:
 最近项目中使用的 [Monolog](https://github.com/Seldaek/monolog) 出了点小问题，去翻其文档，发现居然只有英文的。趁业余时间，翻译一下吧。
 以下是其[使用说明](https://github.com/Seldaek/monolog/blob/master/doc/01-usage.md)的[中文翻译](https://github.com/Clarence-pan/monolog-zh-doc/blob/master/doc/01-usage.md)。更多翻译内容见 [clarence-pan/monolog-zh-doc](https://github.com/Clarence-pan/monolog-zh-doc).
 
+
 # 使用 Monolog
 
 - [安装](#安装)
@@ -193,4 +194,6 @@ $securityLogger->pushHandler($stream);
 
 [处理器、格式化器和加工程序](https://github.com/Clarence-pan/monolog-zh-doc/blob/master/doc/02-handlers-formatters-processors.md) &rarr;
 
+---
 
+> 说明：本文首发地址：<https://www.clarencep.com/2017/07/05/monolog-usage-zh/>，转载请注明出处，如有翻译得不当之处欢迎指正。
