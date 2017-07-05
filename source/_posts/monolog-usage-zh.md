@@ -12,7 +12,7 @@ categories:
 # 前言
 
 最近项目中使用的 [Monolog](https://github.com/Seldaek/monolog) 出了点小问题，去翻其文档，发现居然只有英文的。趁业余时间，翻译一下吧。
-以下是其[使用说明](https://github.com/Seldaek/monolog/blob/master/doc/01-usage.md)的中文翻译。更多翻译内容见 [clarence-pan/monolog-zh-doc](https://github.com/Clarence-pan/monolog-zh-doc).
+以下是其[使用说明](https://github.com/Seldaek/monolog/blob/master/doc/01-usage.md)的[中文翻译](https://github.com/Clarence-pan/monolog-zh-doc/blob/master/doc/01-usage.md)。更多翻译内容见 [clarence-pan/monolog-zh-doc](https://github.com/Clarence-pan/monolog-zh-doc).
 
 # 使用 Monolog
 
@@ -38,7 +38,7 @@ composer require monolog/monolog
 
 ## 核心概念
 
-每一个日志服务实例 (`Logger`) 都有一个通道（名称），并有一个处理器 (Handler)栈. 无论何时你添加一条 [记录](https://github.com/Clarence-pan/monolog-zh-doc/doc/message-structure.md) 到对应的日志服务实例，这个处理器栈将被遍历一遍：每个处理器都将依次决定是否要处理这条记录，而如果要处理，则遍历结束（译注：类似DOM事件冒泡）。
+每一个日志服务实例 (`Logger`) 都有一个通道（名称），并有一个处理器 (Handler)栈. 无论何时你添加一条 [记录](https://github.com/Clarence-pan/monolog-zh-doc/blob/master/doc/message-structure.md) 到对应的日志服务实例，这个处理器栈将被遍历一遍：每个处理器都将依次决定是否要处理这条记录，而如果要处理，则遍历结束（译注：类似DOM事件冒泡）。
 
 这样子可以创建非常灵活的日志配置。比如一个 `StreamHandler` 可以把所有日志都写入磁盘，而上面加个`MailHandler` 可以把错误日志作为邮件发送出去。处理器还有一个 `$bubble` 属性定义了是否屏蔽某条记录或者处理了某条记录。在这个示例中，配置 `MailHandler` 的 `$bubble` 参数为 `false` 则意味着 `MailHandler` 将不会把自己已处理过的记录继续冒泡给 `StreamHandler`.
 
@@ -131,7 +131,7 @@ $logger->pushProcessor(function ($record) {
 });
 ```
 
-Monolog提供了一些内置的加工程序，你可以在你的项目中使用它们。请参见[对应的章节](https://github.com/Seldaek/monolog/blob/master/doc/02-handlers-formatters-processors.md#加工程序).
+Monolog提供了一些内置的加工程序，你可以在你的项目中使用它们。请参见[对应的章节](https://github.com/clarence-pan/monolog-zh-doc/blob/master/doc/02-handlers-formatters-processors.md#加工程序).
 
 > 小技巧：加工程序可以被注册到一个特定的处理器上而不是直接在日志服务实例上，从而可以只在对应的处理器上生效。
 
@@ -191,6 +191,6 @@ $securityLogger->pushHandler($stream);
 
 // 你还可以在多个处理器之间复用同一个格式化器，并且在多个日志服务实例间共享这些处理器。
 
-[处理器、格式化器和加工程序](https://github.com/Clarence-pan/monolog-zh-doc/doc/02-handlers-formatters-processors.md) &rarr;
+[处理器、格式化器和加工程序](https://github.com/Clarence-pan/monolog-zh-doc/blob/master/doc/02-handlers-formatters-processors.md) &rarr;
 
 
