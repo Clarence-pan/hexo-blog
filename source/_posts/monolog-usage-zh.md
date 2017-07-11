@@ -5,9 +5,9 @@ tags:
     - PHP
     - Monolog
     - Translations
-	- 翻译
-	- 中文文档
-	- Monolog中文文档
+    - 翻译
+    - 中文文档
+    - Monolog中文文档
 categories:
     - PHP
 ---
