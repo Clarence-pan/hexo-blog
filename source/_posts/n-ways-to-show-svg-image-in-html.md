@@ -148,5 +148,8 @@ svg图片是可以作为背景图片的。不过和`<img>`标签一样，无法�
 `<picture>`和`<img>`一样，无法显示SVG内嵌的`<image>`.
 
 ### 附完整带测试代码:
-<script src="https://gist.github.com/Clarence-pan/be0a2c14df52a39095b93054a77123c9.js"></script>
+
+效果展示：<https://clarencep.github.io/fe-lab/svg-in-html/>
+
+源代码：<https://github.com/clarencep/fe-lab/tree/master/svg-in-html/dist>
 
