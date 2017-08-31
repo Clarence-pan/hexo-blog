@@ -71,14 +71,14 @@ W.T.F!
 
 在解决这个问题的过程中，顺便查了下，发现除了`<img>`和`<embed>`外还有几种嵌入SVG图片的方法。在此总结下：
 
-### 0. 使用`<svg>`标签
+### 0. 使用`svg`标签
 
 ![](https://ww1.sinaimg.cn/large/006Vei6ogy1fj2pw6rk46j309o05l74e.jpg)
 
 即直接把svg整个标签内容（除了开头的xml和doctype声明外的svg文件内容）都丢到 HTML 中即可。
 可惜不适合本例 -- 我们这次的svg是外部的，不好放入HTML中。
 
-### 1. 使用`<img>`标签
+### 1. 使用`img`标签
 
 ![](https://ww1.sinaimg.cn/large/006Vei6ogy1fj2pwi60wcj309e05edgb.jpg)
 
@@ -89,7 +89,7 @@ W.T.F!
 这个是最容易想到的 -- 因为svg图片也是图片嘛。
 需要注意的是，svg里面带的`<image>`标签将无法正常显示。`<img>`标签适合显示纯矢量+文本的SVG图片。
 
-### 2. 使用`<iframe>`标签
+### 2. 使用`iframe`标签
 
 ![](https://ww1.sinaimg.cn/large/006Vei6ogy1fj2pww813uj309j07bt8n.jpg)
 
@@ -99,7 +99,7 @@ W.T.F!
 
 万能的iframe当然什么都能显示，但是无法控制内容大小 -- viewBox也搞不定，估计只能用百分比来定位了，太麻烦了，不建议使用。
 
-### 3. 使用`<embed>`标签
+### 3. 使用`embed`标签
 
 ![](https://ww1.sinaimg.cn/large/006Vei6ogy1fj2px7d87xj309o05e0su.jpg)
 
@@ -108,7 +108,7 @@ W.T.F!
 ```
 注意使用viewBox，`<embed>`标签的兼容性也很不错的，是个不错的选择。
 
-### 4. 使用`<object>`标签
+### 4. 使用`object`标签
 
 ![](https://ww1.sinaimg.cn/large/006Vei6ogy1fj2pxh0j7gj309g054wel.jpg)
 
@@ -120,7 +120,7 @@ W.T.F!
 
 `<object>`与`<embed>`类似，也要注意配置viewBox.
 
-### 5. 使用`<div>`的背景图片
+### 5. 使用`div`的背景图片
 
 ![](https://ww1.sinaimg.cn/large/006Vei6ogy1fj2pxsxvt2j309h05gjrv.jpg)
 
@@ -130,7 +130,7 @@ W.T.F!
 
 svg图片是可以作为背景图片的。不过和`<img>`标签一样，无法显示SVG内嵌的`<image>`.
 
-### 6. 使用`<picture>`标签
+### 6. 使用`picture`标签
 
 ![](https://ww1.sinaimg.cn/large/006Vei6ogy1fj2py3gul6j309l05bdgb.jpg)
 
