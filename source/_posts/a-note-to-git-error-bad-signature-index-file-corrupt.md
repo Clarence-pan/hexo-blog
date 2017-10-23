@@ -19,11 +19,7 @@ fatal: index file corrupt
 
 <!-- more -->
 
-`index file`在 git 里面一般指的是 `.git/index` 这个文件。这个文件保存的是暂存区的信息（索引信息）。
-可以通过 `git ls-files --stage` 来查看暂存区的内容。这个文件很重要！但是现在报 `index file corrupt`，说明这个文件已经损坏了。
-还好，我们有办法重新来生成这个文件：`git read-tree` 或者直接 `git reset`.
-
-TL; DR.
+`index file`在 git 里面一般指的是 `.git/index` 这个文件。这个文件保存的是暂存区的信息（索引信息）。可以通过 `git ls-files --stage` 来查看暂存区的内容。这个文件很重要！但是现在报 `index file corrupt`，说明这个文件已经损坏了。还好，我们有办法重新来生成这个文件：`git read-tree` 或者直接 `git reset`.
 
 解决办法：
 
