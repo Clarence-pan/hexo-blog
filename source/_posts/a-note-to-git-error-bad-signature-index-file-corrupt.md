@@ -7,7 +7,7 @@ categories:
   - git
 ---
 
-今天打开工程，习惯性地`git status`下，发下报错：
+今天打开工程，习惯性地`git status`下，却发现以下报错：
 
 ```
 λ git status
