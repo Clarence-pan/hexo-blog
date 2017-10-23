@@ -1,10 +1,13 @@
-title: 【翻译】Monolog使用说明
+title: 【翻译】Monolog使用说明 - 即Monolog中文文档
 date: 2017-07-05
 updated:
 tags:
     - PHP
     - Monolog
     - Translations
+    - 翻译
+    - 中文文档
+    - Monolog中文文档
 categories:
     - PHP
 ---
